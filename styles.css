@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	font-family: 'Roboto', sans-serif;
+}
+
+body{
+	background: url("nature.jpg") no-repeat top center;
+	background-size: cover;
+	width: 100%;
+	height:100vh;
+}
+.checkout_form{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+    max-width: 380px;
+    width: 100%;
+    background:rgba(225,225,225,0.6);
+    padding: 30px;
+    border-radius: 25px;  
+}
+
+.card_name{
+	margin-bottom: 25px;
+}
+
+input[type="text"]{
+	padding: 10px;
+	border-radius: 3px;
+	font-size: 16px;
+	border: 0;
+	text-align: center;
+}
+
+.card_name .input{
+	width: 100%;
+	text-align: left; 
+}
+
+.card_grp{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 25px;
+}
+
+.expiry_date .expiry_input{
+	width: 60px;
+	margin-right: 10px;
+}
+
+.cvv .cvv_input{
+	width: 80px;
+	margin-right: 10px;
+}
+
+.expiry_date,
+.cvv{
+	display: flex;
+	width: 48%
+}
+
+.cvv{
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.cvv-img{
+	border: 2px solid black;
+	width: 25px;
+	height: 25px;
+	color: black;
+	font-size: 18px;
+	font-weight: bold;
+	border-radius: 50px;
+	text-align: center;
+	cursor: pointer;
+	position: relative;
+}
+
+.cvv-img .img{
+	position: absolute;
+	width: 100px;
+	height: 72.5px;
+	padding: 10px 10px 10px;
+	border-radius: 5px;
+	top:-30px;
+	right: 33px;
+	background: #064887;
+	display: none;
+}
+
+.cvv-img .img img{
+	width: 80px;
+	height: 50px;
+}
+
+.cvv-img:hover .img{
+	display:block;
+}
+
+.button{
+	width: 100%;
+	background: #064887;
+	color: white;
+	text-align: center;
+	border-radius: 3px;
+	padding: 10px;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-size: 18px;
+	cursor: pointer;
+
+}
+
